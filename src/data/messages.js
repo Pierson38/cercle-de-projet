@@ -7,7 +7,7 @@ var messages = [
     {
         id: 1,
         from: "Bea",
-        messages: ["Tu rentres ce soir ?", "Oui et toi ?", "Cool"],
+        messages: [{from: "me", message: "Salut"}, {from: "bea", message: "Salut"}, {from: "me", message: "Ca va ?"}],
     },
 ];
 
