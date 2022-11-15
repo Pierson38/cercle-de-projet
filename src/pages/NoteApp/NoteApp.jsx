@@ -7,7 +7,7 @@ import NoteItem from "../../components/Note/NoteItem";
 import notes from "../../data/note";
 import { Link } from "react-router-dom";
 
-function NoteApp({ location }) {
+function NoteApp() {
   return (
     <main className="px-6 py-6 h-screen">
       <h1 className="font-bold text-3xl">Notes</h1>

@@ -1,0 +1,9 @@
+.homeScreen {
+    background-image: url("../../assets/wallpaper.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.application p {
+    color: white;
+}

@@ -7,6 +7,9 @@
   src: url("./fonts/SF_Pro/SF-Pro.ttf");
 }
 
+* {
+  font-family: "SF_Pro";
+} 
 .App {
   text-align: center;
 }
