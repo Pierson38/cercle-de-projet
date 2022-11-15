@@ -1,0 +1,23 @@
+.text-orange {
+    color: #FF8A00;
+}
+
+.text-grey {
+    color: #767680;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-orange {
+    background-color: #FF8A00;
+}
+
+.bg-grey {
+    background-color:#F4F7FA;
+}
+
+.bg-white {
+    background-color: white;
+}
