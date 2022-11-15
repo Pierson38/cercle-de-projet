@@ -32,9 +32,9 @@ class ProjetApp extends Component {
         <div>
           <h1 className="font-bold text-3xl">Projet</h1>
           <form onSubmit={this.handleSubmit}>
-            <div>
-              <label>
-                Produit:
+            <div class="bg-white p-4 border-b border-grey mt-4">
+              <label class="text-grey text-lg">
+              <span class="font-semibold"> Produit :</span>
                 <select value={this.state.produit} onChange={this.handleChange}>
                   <option value="siteinternet">Site Internet</option>
                   <option value="application">Application</option>
@@ -43,9 +43,10 @@ class ProjetApp extends Component {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
-                Deadline:
+
+            <div class="bg-white p-4 border-b border-grey mt-4">
+              <label class="text-grey text-lg">
+                <span class="font-semibold">Deadline :</span>
                 <select value={this.state.value} onChange={this.handleChange}>
                   <option value="2semaines">2 semaines</option>
                   <option value="1mois">1 mois</option>
@@ -54,9 +55,10 @@ class ProjetApp extends Component {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
-                Budget:
+
+            <div class="bg-white p-4 border-b border-grey mt-4">
+              <label class="text-grey text-lg">
+              <span class="font-semibold">Budget :</span>
                 <select value={this.state.value} onChange={this.handleChange}>
                   <option value="30k">30k</option>
                   <option value="50k">50k</option>
@@ -65,8 +67,9 @@ class ProjetApp extends Component {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
+
+            {/*<div class="bg-white p-4 border-b border-grey mt-4">
+              <label class="text-grey text-lg">
                 Fonctionnalités:
                 <select multiple={true} onChange={this.handleChange}>
                   <option value="Article">Article</option>
@@ -78,8 +81,42 @@ class ProjetApp extends Component {
                   <option value="Payement">Payement</option>
                 </select>
               </label>
+            </div>*/}
+            <div class="mt-4">
+              <label class="text-grey text-lg">
+                <span class="font-semibold">Fonctionnalités :</span>
+                <div class="mt-2">
+                  <input type="checkbox" id="coding" name="interest" value="Article"/>
+                  <label class="ml-2" for="Article">Article</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="music" name="interest" value="Newsletter"/>
+                  <label class="ml-2" for="Newsletter">Newsletter</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="art" name="interest" value="Goodies"/>
+                  <label class="ml-2" for="Goodies">Achat Goodies</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="sports" name="interest" value="Forum"/>
+                  <label class="ml-2" for="Forum">Forum</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Marketplace"/>
+                  <label class="ml-2" for="Marketplace">Marketplace</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Compte"/>
+                  <label class="ml-2" for="Compte">Système de compte</label>
+                </div>
+                <div class="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Payement"/>
+                  <label class="ml-2" for="Payement">Payement</label>
+                </div>
+              </label>
             </div>
-            <input type="submit" value="Submit" />
+
+            <div class="flex justify-center mt-8"><input class="bg-blue rounded-lg py-4 px-6 text-white" type="submit" value="Envoyer" /></div>
           </form>
         </div>
         <div>

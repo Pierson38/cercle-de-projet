@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 function Presentation() {
 
     return (
-        <main class="h-screen w-full flex flex-column items-center">
-            <section class="m-4 bg-grey">
+        <main class="h-screen w-full flex flex-column items-center bg-grey">
+            <section class="m-4">
                 <h1 class="text-4xl font-bold w-3/4">Bienvenue sur le serious game de chef de projet </h1>
                 <p class="text-grey font-medium mt-2 w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
 
                 <div class="flex justify-between items-center bg-white rounded-3xl shadow mt-4 py-16 px-4">
                     <div class="w-2/3 mr-4">
-                        <h2 class="font-bold text-lg">Résolvez les tâches que l’on vous donne</h2>
+                        <h2 class="font-bold text-2xl">Résolvez les tâches que l’on vous donne</h2>
                         <p class="text-grey font-medium text-sm mt-4">Vous devrez réaliser les différentes étapes qu’un <span class="font-bold text-orange">chef de projet</span> peut rencontrer.</p>
                     </div>
                     <div>
