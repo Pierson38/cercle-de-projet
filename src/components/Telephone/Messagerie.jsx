@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import messagerie from "../../data/messagerie";
+import "./Messagerie.css"
 
 function Messagerie() {
   // un hook custom pour gérer l'audio
@@ -54,7 +55,7 @@ function Messagerie() {
   };
 
   return (
-    <div>
+    <div className="messagerie">
       <h1 className="font-bold text-3xl">Messagerie</h1>
       <hr className="my-3" />
       {messagerie.map((item) => (
