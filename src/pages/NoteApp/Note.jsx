@@ -11,7 +11,7 @@ function Note({ note }) {
     <div>
       <div className="p-3">
         <Link to=".." relative="path">
-            <p className="cancel">&lt; Cancel</p>
+            <p className="cancel flex items-center -mt-2"><span class="text-5xl">&#8249;</span></p>
         </Link>
       </div>
       <div className="px-6 pb-6 h-screen">
