@@ -24,10 +24,7 @@ class HomePage extends Component {
           {applications[1].map((item) => (
             <Link to={item.link} key={item.id}>
               <div className="application" key={item.id}>
-                <img src={item.icon} alt="" className="w-14 m-auto mb-1" />
-                <p className="text-white text-center font-medium">
-                  {item.name}
-                </p>
+                <img src={item.icon} alt="" className="w-14 m-auto" />
               </div>
             </Link>
           ))}
