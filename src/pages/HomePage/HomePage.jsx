@@ -27,7 +27,7 @@ class HomePage extends Component {
                 <img src={item.icon} alt="" className="w-14 m-auto mb-1" />
                 <p className="text-white text-center font-medium">
                   {item.name}
-                </p>
+                </p> 
               </div>
             </Link>
           ))}
