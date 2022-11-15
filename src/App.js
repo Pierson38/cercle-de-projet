@@ -6,9 +6,11 @@ import "./fonts/SF_Pro/SF-Pro.ttf";
 import HomePage from './pages/HomePage/HomePage'
 import NoteApp from './pages/NoteApp/NoteApp'
 import Note from './pages/NoteApp/Note';
+
+import Presentation from './pages/Presentation/Presentation';
+
 import MessageApp from './pages/messages/MessageApp';
 import Message from './pages/messages/Message';
-
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="notes" element={<NoteApp />} />
+        <Route path="presentation" element={<Presentation />} />
         <Route
           path="notes/:id/"
           element={<Note />}
