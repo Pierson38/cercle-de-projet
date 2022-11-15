@@ -2,12 +2,14 @@ var messages = [
     {
         id: 0,
         from: "Boss",
-        messages: ["Salut, ca va ?", "Oui et toi ?", "Ca va merci"],
+        messages: [{from: "moi", message: "Salut"}, {from: "Boss", message: "Salut"}, {from: "moi", message: "Ca va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/icon-bea.png",
     },
     {
         id: 1,
         from: "Bea",
-        messages: ["Tu rentres ce soir ?", "Oui et toi ?", "Cool"],
+        messages: [{from: "moi", message: "Tu rentres ce soir ?"}, {from: "Boss", message: "Oui et toi ?"}, {from: "moi", message: "Cool va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/icon-bea.png",
     },
 ];
 
