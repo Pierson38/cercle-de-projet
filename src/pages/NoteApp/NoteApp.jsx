@@ -16,6 +16,11 @@ function NoteApp() {
           <NoteItem note={item} key={item.id} />
         </Link>
       ))}
+      <div>
+        <Link to="/">
+          <p className="text-center">Home</p>
+        </Link>
+      </div>
     </main>
   );
 }
