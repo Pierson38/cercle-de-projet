@@ -7,3 +7,7 @@
 .application p {
     color: white;
 }
+
+.app_down {
+    background-color: rgba(204, 204, 204, 0.5);
+}
