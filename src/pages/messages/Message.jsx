@@ -13,8 +13,8 @@ function Note({ message }) {
           <div class="flex p-3 justify-between items-center bg-grey-100">
             <p className="cancel" class="text-5xl blue -mt-2 ml-2">&#8249;</p>
             <div class="">
-              <img src={messages[id].profilUrl} alt=""/>
-              <h1 className="text-1xl">{messages[id].from}</h1>
+              <img src={messages[id].profilUrl} alt="" className="image-ronde w-12 m-auto"/>
+              <h1 className="text-1xl text-center">{messages[id].from}</h1>
             </div>
             <div></div>
           </div>

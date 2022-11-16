@@ -1,3 +1,7 @@
 .border-grey {
-  border-color: #D4D2D2;
+  border-color: #d4d2d2;
+}
+
+.image-ronde {
+  clip-path: ellipse(50% 50%);
 }

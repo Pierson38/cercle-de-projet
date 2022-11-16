@@ -28,7 +28,7 @@ function Notification({ notification }) {
           <div className="mr-3 flex justify-center flex-col">
             <img src="/assets/appIcons/icon-mail.png" alt="" className="w-20" />
           </div>
-          <div>
+          <div> 
             <div className="flex justify-between">
               <p className="font-bold leading-5">Titre</p>
               <p className="text-sm subtitle leading-5">il y a 22 min</p>
