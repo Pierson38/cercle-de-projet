@@ -77,31 +77,31 @@ function ProjetApp() {
               <label className="text-grey text-lg">
                 <span className="font-semibold">Fonctionnalités :</span>
                 <div className="mt-2">
-                  <input type="checkbox" id="coding" name="interest" value="Article" onChange={e => setArticle(e.target.value)}/>
+                  <input type="checkbox" id="Article" name="interest" value="Article" onChange={e => setArticle(e.target.value)}/>
                   <label className="ml-2" htmlFor="Article">Article</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="music" name="interest" value="Newsletter" onChange={e => setNewsletter(e.target.value)}/>
+                  <input type="checkbox" id="Newsletter" name="interest" value="Newsletter" onChange={e => setNewsletter(e.target.value)}/>
                   <label className="ml-2" htmlFor="Newsletter">Newsletter</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="art" name="interest" value="Goodies" onChange={e => setGoodies(e.target.value)}/>
+                  <input type="checkbox" id="Goodies" name="interest" value="Goodies" onChange={e => setGoodies(e.target.value)}/>
                   <label className="ml-2" htmlFor="Goodies">Achat Goodies</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="sports" name="interest" value="Forum" onChange={e => setForum(e.target.value)}/>
+                  <input type="checkbox" id="Forum" name="interest" value="Forum" onChange={e => setForum(e.target.value)}/>
                   <label className="ml-2" htmlFor="Forum">Forum</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="cooking" name="interest" value="Marketplace" onChange={e => setMarketplace(e.target.value)}/>
+                  <input type="checkbox" id="Marketplace" name="interest" value="Marketplace" onChange={e => setMarketplace(e.target.value)}/>
                   <label className="ml-2" htmlFor="Marketplace">Marketplace</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="cooking" name="interest" value="Compte" onChange={e => setCompte(e.target.value)}/>
+                  <input type="checkbox" id="Compte" name="interest" value="Compte" onChange={e => setCompte(e.target.value)}/>
                   <label className="ml-2" htmlFor="Compte">Système de compte</label>
                 </div>
                 <div className="mt-2">
-                  <input type="checkbox" id="cooking" name="interest" value="Payement" onChange={e => setPayement(e.target.value)}/>
+                  <input type="checkbox" id="Payement" name="interest" value="Payement" onChange={e => setPayement(e.target.value)}/>
                   <label className="ml-2" htmlFor="Payement">Payement</label>
                 </div>
               </label>
