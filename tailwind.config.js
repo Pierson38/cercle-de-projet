@@ -6,6 +6,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      'mobile': '440px',
+    },
     fontFamily: {
       'sans': ['SF_Pro', ...defaultTheme.fontFamily.sans],
     },

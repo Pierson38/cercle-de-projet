@@ -8,16 +8,24 @@ function ProjetApp() {
   const [produit, setProduit] = useState('siteinternet');
   const [deadline, setDeadline] = useState('2semaines');
   const [budget, setBudget] = useState('30k');
-  const [fonctionnalite, setFonctionnalite] = useState(["Compte", "Forum"]);
+  const [article, setArticle] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
+  const [goodies, setGoodies] = useState(false);
+  const [forum, setForum] = useState(false);
+  const [marketplace, setMarketplace] = useState(false);
+  const [compte, setCompte] = useState(false);
+  const [payement, setPayement] = useState(false);
+
+
   
     return (
       <main className="px-6 py-6 h-screen NoteApp flex flex-col justify-between">
         <div>
           <h1 className="font-bold text-3xl">Projet</h1>
-          <form >
-            <div>
-              <label>
-                Produit:
+          <form>
+            <div className="bg-white p-4 border-b border-grey mt-4">
+              <label className="text-grey text-lg">
+              <span className="font-semibold"> Produit :</span>
                 <select value={produit} onChange={e => setProduit(e.target.value)}>
                   <option value="siteinternet">Site Internet</option>
                   <option value="application">Application</option>
@@ -26,9 +34,10 @@ function ProjetApp() {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
-                Deadline:
+
+            <div className="bg-white p-4 border-b border-grey mt-4">
+              <label className="text-grey text-lg">
+                <span className="font-semibold">Deadline :</span>
                 <select value={deadline} onChange={e => setDeadline(e.target.value)}>
                   <option value="2semaines">2 semaines</option>
                   <option value="1mois">1 mois</option>
@@ -37,10 +46,11 @@ function ProjetApp() {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
-                Budget:
-                <select value={budget} onChange={e => setBudget(e.target.value)} >
+
+            <div className="bg-white p-4 border-b border-grey mt-4">
+              <label className="text-grey text-lg">
+              <span className="font-semibold">Budget :</span>
+                <select value={budget} onChange={e => setBudget(e.target.value)}>
                   <option value="30k">30k</option>
                   <option value="50k">50k</option>
                   <option value="100k">100k</option>
@@ -48,8 +58,9 @@ function ProjetApp() {
                 </select>
               </label>
             </div>
-            <div>
-              <label>
+
+            {/*<div className="bg-white p-4 border-b border-grey mt-4">
+              <label className="text-grey text-lg">
                 Fonctionnalités:
                 <select multiple={true}  onChange={e => setFonctionnalite(e.target.value)} value={fonctionnalite}>
                   <option value="Article">Article</option>
@@ -61,8 +72,42 @@ function ProjetApp() {
                   <option value="Payement">Payement</option>
                 </select>
               </label>
+            </div>*/}
+            <div className="mt-4">
+              <label className="text-grey text-lg">
+                <span className="font-semibold">Fonctionnalités :</span>
+                <div className="mt-2">
+                  <input type="checkbox" id="coding" name="interest" value="Article" onChange={e => setArticle(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Article">Article</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="music" name="interest" value="Newsletter" onChange={e => setNewsletter(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Newsletter">Newsletter</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="art" name="interest" value="Goodies" onChange={e => setGoodies(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Goodies">Achat Goodies</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="sports" name="interest" value="Forum" onChange={e => setForum(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Forum">Forum</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Marketplace" onChange={e => setMarketplace(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Marketplace">Marketplace</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Compte" onChange={e => setCompte(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Compte">Système de compte</label>
+                </div>
+                <div className="mt-2">
+                  <input type="checkbox" id="cooking" name="interest" value="Payement" onChange={e => setPayement(e.target.value)}/>
+                  <label className="ml-2" htmlFor="Payement">Payement</label>
+                </div>
+              </label>
             </div>
-            <input type="submit" value="Submit" />
+
+            <div className="flex justify-center mt-8"><input className="bg-blue rounded-lg py-4 px-6 text-white" type="submit" value="Envoyer" /></div>
           </form>
         </div>
         <div>
