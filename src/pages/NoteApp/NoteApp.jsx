@@ -18,9 +18,9 @@ function NoteApp() {
           </Link>
         ))}
       </div>
-      <div>
-        <Link to="/">
-          <p className="text-center">Home</p>
+      <div className="fixed bottom-0 w-full left-0">
+        <Link to="/" className="">
+          <img src="/assets/buttonHome.png" alt="" className=" w-10 mx-auto pb-4"/>
         </Link>
       </div>
     </main>

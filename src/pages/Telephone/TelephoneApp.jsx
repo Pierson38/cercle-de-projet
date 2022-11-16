@@ -14,7 +14,7 @@ function TelephoneApp() {
     <main className="px-6 py-6 h-screen TelephoneApp flex flex-col justify-between">
       {phonePage === "clavier" ? <Clavier /> : <Messagerie />}
 
-      <div className="flex justify-around">
+      <div className="flex justify-around mb-8">
         <div className="text-sm" onClick={() => setPhonePage("clavier")}>
           <img className="m-auto w-8" src="/assets/icon-dialing.png" alt="" />
           Clavier
@@ -28,9 +28,9 @@ function TelephoneApp() {
           Messagerie
         </div>
       </div>
-      <div>
-        <Link to="/">
-          <p className="text-center">Home</p>
+      <div className="fixed bottom-0 w-full left-0">
+        <Link to="/" className="">
+          <img src="/assets/buttonHome.png" alt="" className=" w-10 mx-auto pb-4"/>
         </Link>
       </div>
     </main>

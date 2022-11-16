@@ -110,11 +110,11 @@ function ProjetApp() {
             <div className="flex justify-center mt-8"><input className="bg-blue rounded-lg py-4 px-6 text-white" type="submit" value="Envoyer" /></div>
           </form>
         </div>
-        <div>
-          <Link to="/">
-            <p className="text-center">Home</p>
-          </Link>
-        </div>
+        <div className="fixed bottom-0 w-full left-0">
+        <Link to="/" className="">
+          <img src="/assets/buttonHome.png" alt="" className=" w-10 mx-auto pb-4"/>
+        </Link>
+      </div>
       </main>
     );
 }
