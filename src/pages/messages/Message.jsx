@@ -22,7 +22,7 @@ function Note({ message }) {
       </div>
       <div className="px-6 pb-6 h-screen mt-8">
         {messages[id].messages.map(item => {
-          return item.from == "moi" ?
+          return item.from === "moi" ?
             <div class="flex justify-end"><div class="flex justify-end items-center rounded-2xl px-4 py-1 bg-blue w-fit text-white"> <span className="">{item.message}</span></div></div>
             :
             <div class="flex justify-start">

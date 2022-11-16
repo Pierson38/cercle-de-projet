@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function NoteApp() {
   return (
-    <main className="px-6 py-6 h-screen NoteApp flex flex-col justify-between">
+    <main className="px-6 py-6 NoteApp flex flex-col justify-between">
       <div>
         <h1 className="font-bold text-3xl">Notes</h1>
         {notes.map((item) => (

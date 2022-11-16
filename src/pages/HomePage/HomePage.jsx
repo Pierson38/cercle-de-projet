@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import applications from "../../data/applications";
 import "./HomePage.css";
 import "../../fonts/SF_Pro/SF-Pro.ttf";
+import Notification from "../../components/Notification/Notification";
 
 class HomePage extends Component {
   render() {
     return (
       <main className="h-screen homeScreen flex flex-col justify-between">
+        <Notification />
         <div className="grid grid-cols-4 pt-5">
           {applications[0].map((item) => (
             <Link to={item.link} key={item.id}>
