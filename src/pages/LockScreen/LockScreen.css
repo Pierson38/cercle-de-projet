@@ -1,0 +1,64 @@
+.bg-img {
+    background-image: url("../../assets/illustration/lockscreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.border-white {
+    border: 1px solid white;
+}
+
+.left-7-5 {
+    left: 0.85em;
+}
+
+.background-white {
+    background-color: white;
+}
+
+.screen-1 {
+    z-index: 50;
+    margin-top: 0%;
+    transition: margin-top .7s ease-in-out;
+}
+
+.screen-2 {
+    z-index: 1;
+}
+
+.screen-1.active {
+    margin-top: -200%;
+    transition: margin-top .7s ease-in-out;
+}
+
+.face {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

@@ -8,6 +8,7 @@ import NoteApp from './pages/NoteApp/NoteApp'
 import Note from './pages/NoteApp/Note';
 
 import Presentation from './pages/Presentation/Presentation';
+import LockScreen from './pages/LockScreen/LockScreen';
 
 import MessageApp from './pages/messages/MessageApp';
 import Message from './pages/messages/Message';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="notes" element={<NoteApp />} />
         <Route path="presentation" element={<Presentation />} />
+        <Route path="lockscreen" element={<LockScreen />} />
         <Route
           path="notes/:id/"
           element={<Note />}
