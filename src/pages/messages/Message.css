@@ -17,3 +17,7 @@
 .text-grey {
     color: #767680;
 }
+
+.max-width {
+    max-width: 250px;
+}
