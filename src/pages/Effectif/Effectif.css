@@ -1,0 +1,15 @@
+.bg-purple-100 {
+    background-color: #EDEAFF;
+}
+
+.border-purple-500 {
+    border-color: #C8BFFF;
+}
+
+.bg-shadow {
+    box-shadow: 0px 4px 11px -4px rgba(0, 0, 0, 0.17);
+}
+
+.text-blue-500 {
+    color: #4232A8;
+}
