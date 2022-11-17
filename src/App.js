@@ -13,7 +13,8 @@ import LockScreen from './pages/LockScreen/LockScreen';
 import MessageApp from './pages/messages/MessageApp';
 import Message from './pages/messages/Message';
 import TelephoneApp from './pages/Telephone/TelephoneApp';
-import ProjetApp from './pages/Projet/ProjetApp'
+import ProjetApp from './pages/Projet/ProjetApp';
+import Effectif from './pages/Effectif/Effectif';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="notes" element={<NoteApp />} />
         <Route path="presentation" element={<Presentation />} />
         <Route path="lockscreen" element={<LockScreen />} />
+        <Route path="effectif" element={<Effectif />} />
         <Route
           path="notes/:id/"
           element={<Note />}
