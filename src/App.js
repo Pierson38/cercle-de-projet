@@ -15,6 +15,7 @@ import TelephoneApp from './pages/Telephone/TelephoneApp';
 import ProjetApp from './pages/Projet/ProjetApp';
 import Game from './Game/game';
 import Popup from './components/Popup/Popup';
+import Appel from './pages/Telephone/Appel';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="home" element={<HomePage />} />
         <Route path="lockscreen" element={<LockScreen />} />
         <Route path="popup" element={<Popup />} />
+        <Route path="appel" element={<Appel />} />
         <Route
           path="notes/:id/"
           element={<Note />}
