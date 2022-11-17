@@ -59,7 +59,7 @@ function Messagerie() {
           </div>
         </div>
         <div>
-          <button onClick={togglePlayback} icon labelPosition="left">
+          <button onClick={togglePlayback}>
             {playing ? "⏸️" : "⏯️"}
           </button>
         </div>
@@ -74,7 +74,7 @@ function Messagerie() {
       {messagerie.map((item) => (
         <div>
           <div className="my-4">
-            <AudioPlayer message={item} />
+            <AudioPlayer message={item} key={item.id} />
           </div>
           <hr />
         </div>

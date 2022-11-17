@@ -125,14 +125,14 @@ function Clavier() {
             onClick={() => call()}
             className="rounded-full bg-slate-400 text-center text-3xl clavier_number h-14 w-14 my-2 mx-auto block callButon"
           >
-            📞
+            <img className="block m-auto w-7" src="/assets/phone.png" alt="" /> 
           </button>
         </div>
         <div>
           {phoneNumber === "" ? (
             <div></div>
           ) : (
-            <button className="rounded-full text-center text-3xl h-14 w-14 my-2 mx-auto block" onClick={() => supprToPhone()}>⬅️</button>
+            <button className="rounded-full text-center text-3xl h-14 w-14 my-2 mx-auto block" onClick={() => supprToPhone()}> <img className="block m-auto" src="/assets/effacer.png" alt="" /> </button>
           )}
         </div>
       </div>

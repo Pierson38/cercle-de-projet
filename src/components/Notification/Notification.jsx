@@ -1,6 +1,5 @@
 import React from "react";
 import "./Notification.css";
-import { useState, useEffect } from "react";
 import { fadeIn } from "react-animations";
 import styled, { keyframes } from "styled-components";
 
