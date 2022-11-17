@@ -47,6 +47,68 @@ var notifications = [[
         content: "Besoin d'aide pour la recherche d'alternance ?",
         icon: "/assets/Icon notif/messages.png",
     },
+    {
+        id: 8,
+        title: "Twitter",
+        content: "TCL Lyon InfoTrafic : LJD166 21/11 au 16/12 - 5h35 à 19h - Arrêt Les places reporté à sur la route Neuve. Travaux",
+        icon: "/assets/Icon notif/twitter.png",
+    },
+    {
+        id: 10,
+        title: "Twitter",
+        content: "David Michigan : It is all in your mind",
+        icon: "/assets/Icon notif/twitter.png",
+    },
+    {
+        id: 11,
+        title: "Twitter",
+        content: "David Michigan : Un peu de sauce Michi pour aujourd'hui ?",
+        icon: "/assets/Icon notif/twitter.png",
+    },
+    {
+        id: 12,
+        title: "Twitter",
+        content: "ManuelFerraraTV : Le chien aboie et la caravane passe",
+        icon: "/assets/Icon notif/twitter.png",
+    },
+    {
+        id: 13,
+        title: "Réglages",
+        content: "Stockage presque saturé",
+        icon: "/assets/Icon notif/settings.png",
+    },
+    {
+        id: 14,
+        title: "Instagram",
+        content: "Johnny Sins a liké votre publication",
+        icon: "/assets/Icon notif/instagram.png",
+    },
+    {
+        id: 15,
+        title: "Instagram",
+        content: "Abella a liké votre publication",
+        icon: "/assets/Icon notif/instagram.png",
+    },
+    {
+        id: 16,
+        title: "Instagram",
+        content: "Mia Malkova a réagit à votre storie",
+        icon: "/assets/Icon notif/instagram.png",
+    },
+    {
+        id: 17,
+        title: "Instagram",
+        content: "Yinny leon a réagit à votre storie",
+        icon: "/assets/Icon notif/instagram.png",
+    },
+    {
+        id: 18,
+        title: "Facebook",
+        content: "Caperlan carpFishing : a publié une nouvelle vidéo",
+        icon: "/assets/Icon notif/facebook.png",
+    },
+    
+
 ]];
 
 export default notifications;
