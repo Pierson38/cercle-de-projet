@@ -46,7 +46,7 @@ function TelephoneApp() {
         </div>
       </div>
       <div className="fixed bottom-0 w-full left-0">
-        <Link to="/" className="block w-fit m-auto">
+        <Link to="/home" className="block w-fit m-auto">
           <img
             src="/assets/buttonHome.png"
             alt=""
