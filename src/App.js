@@ -16,6 +16,7 @@ import ProjetApp from './pages/Projet/ProjetApp';
 import Game from './Game/game';
 import Popup from './components/Popup/Popup';
 import Appel from './pages/Telephone/Appel';
+import ProjetCode from './pages/Projet/ProjetCode';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="lockscreen" element={<LockScreen />} />
         <Route path="popup" element={<Popup />} />
         <Route path="appel" element={<Appel />} />
+        <Route path="projetCode" element={<ProjetCode />} />
         <Route
           path="notes/:id/"
           element={<Note />}
