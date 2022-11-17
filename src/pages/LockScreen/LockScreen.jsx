@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './LockScreen.css';
 import { useNavigate } from "react-router-dom";
+import game from '../../Game/game'
 
 
 function LockScreen() {
@@ -30,6 +31,8 @@ function LockScreen() {
             if (temp === "111111") {
                 await sleep(500);
                 setRedirect(true);
+                game.setLockScreenUnlock(true);
+                console.log(game);
             } else {
                 var bulletGroup = document.querySelectorAll('.group-round');
                 bulletGroup.forEach(element => {
@@ -48,8 +51,12 @@ function LockScreen() {
     const navigate = useNavigate();
     useEffect(() => {
         if (redirect) {
-            navigate("/");
+            navigate("/home");
         }
+
+        if (game.getLockScreenUnlock()) {
+            navigate("/home");
+          }
     })
 
 

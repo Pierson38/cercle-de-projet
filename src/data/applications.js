@@ -12,6 +12,12 @@ var applications = [[
         icon: "/assets/appIcons/icon-projet.png",
         link: "/projet"
     },
+    {
+        id: 5,
+        name: "Effectif",
+        icon: "/assets/appIcons/icon-effectif.png",
+        link: "/effectif"
+    },
 ], [
     {
         id: 3,

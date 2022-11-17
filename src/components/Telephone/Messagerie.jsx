@@ -1,12 +1,25 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import "./Messagerie.css";
+import game from "../../Game/game";
 
-import messagerie from "../../data/messagerie";
-import "./Messagerie.css"
 
 function Messagerie() {
+  const[messagerie, setMessagerie] = useState([]);
+
+  useEffect(() => {
+    waitForElement();
+  }, []);
+
+  function waitForElement() {
+    setMessagerie(game.getMessagerie());
+    setTimeout(waitForElement, 3000);
+  }
+
+
   // un hook custom pour gérer l'audio
   const useAudio = (url) => {
+    
     const [audio] = useState(new Audio(url));
     const [playing, setPlaying] = useState(false);
 
@@ -37,8 +50,8 @@ function Messagerie() {
       <div>
         <div className="flex justify-between">
           <div>
-          <p className=" font-bold">{message.from}</p>
-          <p className="secondColor">France</p>
+            <p className=" font-bold">{message.from}</p>
+            <p className="secondColor">France</p>
           </div>
           <div>
             <p className="text-end">{message.date}</p>
