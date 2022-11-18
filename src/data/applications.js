@@ -22,7 +22,7 @@ var applications = [[
     {
         id: 3,
         name: "Telephone",
-        icon: "/assets/appIcons/icon-tel.png",
+        icon: "/assets/appIcons/phone.png",
         link: "/telephone"
     },
     {
