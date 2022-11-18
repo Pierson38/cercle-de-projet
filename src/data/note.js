@@ -25,9 +25,9 @@ var notes = [
     },
     {
         id: 4,
-        title: "Entretien Siffredy academy",
+        title: "Entretien G4 academy",
         description:
-            "19 Mars 2022 , venir avec un gros , gros dossier et de gros élements",
+            "19 Mars 2022 , venir avec un gros dossier",
     },
     {
         id: 5,
@@ -51,7 +51,7 @@ var notes = [
         id: 8,
         title: "Site montage meuble",
         description:
-            "https://www.frizbiz.com/fr/articles/le-montage-de-meubles-en-toute-simplicite-grace-a-frizbiz-frizbiz , https://www.montermonmeubletoutseul.com/ , https://www.ikea.com/fr/fr/customer-service/knowledge/articles/9950b769-82g9-407g-9bb0-4049bdgb3790.html , https://www.shutterstock.com/fr/search/busty-redhead?image_type=photo , https://www.systemed.fr/mobilier/montage-meubles-kit ,3185.html, https://www.but.fr/Services/Page/Montage ",
+            "https://www.frizbiz.com/fr/articles/le-montage-de-meubles-en-toute-simplicite-grace-a-frizbiz-frizbiz , https://www.montermonmeubletoutseul.com/ , https://www.ikea.com/fr/fr/customer-service/knowledge/articles/9950b769-82g9-407g-9bb0-4049bdgb3790.html , https://www.systemed.fr/mobilier/montage-meubles-kit ,3185.html, https://www.but.fr/Services/Page/Montage ",
     },
     {
         id: 9,
