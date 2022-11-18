@@ -92,13 +92,13 @@ var notifications = [
     {
         id: 16,
         title: "Instagram",
-        content: "Mia Malkova a réagit à votre storie",
+        content: "Mia Malkova a réagit à votre story",
         icon: "/assets/Icon_notif/instagram.png",
     },
     {
         id: 17,
         title: "Instagram",
-        content: "Yinny leon a réagit à votre storie",
+        content: "Yinny leon a réagit à votre story",
         icon: "/assets/Icon_notif/instagram.png",
     },
     {

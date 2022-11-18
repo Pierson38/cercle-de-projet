@@ -3,7 +3,7 @@ var notes = [
         id: 0,
         title: "Travail à faire",
         description:
-            "Faire un vrai boulot à Bea.",
+            "Faire signer les feuilles de présences.",
     },
     {
         id: 1,
@@ -33,13 +33,13 @@ var notes = [
         id: 5,
         title: "Chasse Jaquie",
         description:
-            "3 decembre chasse au sanglier , prevoir de ramener beaucoup de gland (Faire un tri à G4)",
+            "3 decembre chasse au sanglier , prévoir de ramener beaucoup de glands (Faire un tri à G4)",
     },
     {
         id: 6,
         title: "Liste de course",
         description:
-            "Carotte, lait, eau , pâte , riz , courgettes, viagra, activia , nouilles , sauce soja , coca, émincée de poulet, steacks hachées, curry , fajitas , chips, lub, bar, limande, saumon, sauje , topinambour.",
+            "Carotte, lait, eau , pâte , riz , courgettes, activia , nouilles , sauce soja , coca, émincée de poulet, steacks hachées, curry , fajitas , chips, lub, bar, limande, saumon, sauje , topinambour.",
     },
     {
         id: 7,
@@ -51,7 +51,7 @@ var notes = [
         id: 8,
         title: "Site montage meuble",
         description:
-            "https://www.frizbiz.com/fr/articles/le-montage-de-meubles-en-toute-simplicite-grace-a-frizbiz-frizbiz , https://www.montermonmeubletoutseul.com/ , https://www.ikea.com/fr/fr/customer-service/knowledge/articles/9950b769-82g9-407g-9bb0-4049bdgb3790.html , https://www.shutterstock.com/fr/search/busty-redhead?image_type=photo , https://www.systemed.fr/mobilier/montage-meubles-kit ,3185.html , https://fr.spankbang.com/s/redhead/ , https://www.but.fr/Services/Page/Montage ",
+            "https://www.frizbiz.com/fr/articles/le-montage-de-meubles-en-toute-simplicite-grace-a-frizbiz-frizbiz , https://www.montermonmeubletoutseul.com/ , https://www.ikea.com/fr/fr/customer-service/knowledge/articles/9950b769-82g9-407g-9bb0-4049bdgb3790.html , https://www.shutterstock.com/fr/search/busty-redhead?image_type=photo , https://www.systemed.fr/mobilier/montage-meubles-kit ,3185.html, https://www.but.fr/Services/Page/Montage ",
     },
     {
         id: 9,
