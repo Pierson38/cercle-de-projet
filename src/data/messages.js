@@ -30,13 +30,13 @@ var messages = [
         id: 4,
         from: "Amelie",
         messages: [ {from: "Amelie", message: "AMELI: Votre carte vitale arrive à expiration, veuillez la mettre à jour avant le 19/10/2022"}],
-        profilUrl: "http://localhost:3000/assets/contact/icon-bea.png",
+        profilUrl: "http://localhost:3000/assets/contact/ameli.webp",
     },
     {
         id: 5,
         from: "Johnny",
         messages: [{from: "moi", message: "Hello, comment va ? "}, {from: "Johnny", message: "hello, super et toi?"}, {from: "moi", message: "Super , je voulais savoir, tu viens toujours à la soirée du 18?"}, {from: "Johnny", message: "Oui, évidemment, en plus ça promet d'être génial ! On sera combien?"}, {from: "moi", message: "4"}, {from: "Johnny", message: "Trop cool !"},],
-        profilUrl: "http://localhost:3000/assets/contact/johnny.png",
+        profilUrl: "http://localhost:3000/assets/contact/jon.png",
     },
     {
         id: 6,
@@ -61,6 +61,24 @@ var messages = [
         from: "DHL",
         messages: [ {from: "DHL", message: "DHL express 7563567534 de LUXOR.co. Livraison prévue DEMAIN."}, {from: "moi", message: "Ca va ?"}],
         profilUrl: "http://localhost:3000/assets/contact/dhl.png",
+    },
+    {
+        id: 10,
+        from: "Laguna",
+        messages: [ {from: "Laguna", message: "Comment va vieux briscard? ça roule ? petit message pour t'inviter à l'anniv de Caro le 25"}],
+        profilUrl: "http://localhost:3000/assets/contact/renaud.png",
+    },
+    {
+        id: 11,
+        from: "Pat",
+        messages: [ {from: "Pat", message: "Et bah mon poulet t'as finis rond ballon samedi dernier !"}],
+        profilUrl: "http://localhost:3000/assets/contact/pat.png",
+    },
+    {
+        id: 12,
+        from: "Karine",
+        messages: [ {from: "Karine", message: "Pense à aller chercher le pain quand tu vas chercher Didier à la gare"}],
+        profilUrl: "http://localhost:3000/assets/contact/Karine.png",
     },
 
 ];

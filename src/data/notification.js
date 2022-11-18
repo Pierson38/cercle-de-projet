@@ -107,6 +107,12 @@ var notifications = [
         content: "Caperlan carpFishing : a publié une nouvelle vidéo",
         icon: "/assets/Icon_notif/facebook.png",
     },
+    {
+        id: 19,
+        title: "Karine",
+        content: "Pense à aller chercher le pain quand tu vas chercher Didier à la gare",
+        icon: "/assets/Icon_notif/messages.png",
+    },
     
 
 ];
