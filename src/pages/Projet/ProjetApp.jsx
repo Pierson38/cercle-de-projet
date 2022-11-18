@@ -8,6 +8,8 @@ import Notification from "../../components/Notification/Notification";
 import Popup from "../../components/Popup/Popup";
 
 function ProjetApp() {
+  const [projetPage, setProjetPage] = useState("projet");
+
   const [produit, setProduit] = useState("application");
   const [deadline, setDeadline] = useState("2semaines");
   const [budget, setBudget] = useState("30k");
@@ -93,8 +95,8 @@ function ProjetApp() {
   return (
     <div>
       {showPopup && <Popup popup={popup} handleClick={handleClick} />}
+      {showNotification && <Notification notification={notification} />}
       <main className="px-6 py-6 h-screen NoteApp flex flex-col justify-between">
-        {showNotification && <Notification notification={notification} />}
         <div>
           <h1 className="font-bold text-3xl">Projet</h1>
           <form>
@@ -235,7 +237,26 @@ function ProjetApp() {
             </div>
           </form>
         </div>
-
+        <div className="flex justify-around mb-8">
+          <Link to={"/projet"}>
+            <div className="text-sm z-10">
+              <img className="m-auto w-8" src="/assets/clock.png" alt="" />
+              Projet
+            </div>
+          </Link>
+          <Link to={"/projetValideAppel"}>
+            <div className="text-sm z-10">
+              <img className="m-auto w-8" src="/assets/conflict.png" alt="" />
+              Conflit
+            </div>
+          </Link>
+          <Link to={"/projetCode"}>
+            <div className="text-sm z-10">
+              <img className="m-auto w-8" src="/assets/conformite.png" alt="" />
+              Conformité
+            </div>
+          </Link>
+        </div>
         <div className="fixed bottom-0 w-full left-0">
           <Link to="/home" className="">
             <img

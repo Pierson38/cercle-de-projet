@@ -1,5 +1,7 @@
 import notifs from "../data/notification";
 import messages from "../data/messages";
+import appels from "../data/appels";
+
 
 class Game {
 
@@ -7,9 +9,9 @@ class Game {
         //Checkpoint
         this.lockScreenUnlock = JSON.parse(localStorage.getItem('lockScreenUnlock')) || false;
         this.enigmeIdentificationUnlock = JSON.parse(localStorage.getItem('enigmeIdentificationUnlock')) || false;
-        this.enigmeTache = localStorage.getItem('enigmeTache') || false;
-        this.enigmeAppel = localStorage.getItem('enigmeAppel') || false;
-        this.enigmeLogigram = localStorage.getItem('enigmeLogigram') || false;
+        this.enigmeTache = JSON.parse(localStorage.getItem('enigmeTache')) || false;
+        this.enigmeAppel = JSON.parse(localStorage.getItem('enigmeAppel')) || false;
+        this.enigmeLogigram = JSON.parse(localStorage.getItem('enigmeLogigram')) || false;
 
         //Chronometre
         this.chronometre = localStorage.getItem('chronometre') || new Date();
@@ -29,6 +31,8 @@ class Game {
 
         this.notifications = notifs;
         this.messages = messages;
+        this.appels = appels;
+        this.historique = [];
 
         this.sendNotifications();
     }
@@ -63,6 +67,24 @@ class Game {
     setEnigmeTache(newValue) {
         this.enigmeTache = newValue;
         localStorage.setItem('enigmeTache', newValue);
+    }
+
+    getEnigmeAppel() {
+        return this.enigmeAppel;
+    }
+
+    setEnigmeAppel(newValue) {
+        this.enigmeAppel = newValue;
+        localStorage.setItem('enigmeAppel', newValue);
+    }
+
+    getEnigmeLogigram() {
+        return this.enigmeLogigram;
+    }
+
+    setEnigmeLogigram(newValue) {
+        this.enigmeLogigram = newValue;
+        localStorage.setItem('enigmeLogigram', newValue);
     }
 
     getNotification() {
@@ -108,16 +130,32 @@ class Game {
         newValue.id = Math.floor(Math.random() * 100);
         this.notifications.push(newValue);
     }
-    
+
     getMessages() {
         return this.messages;
     }
-    
+
     setMessages(newValue) {
         console.log(newValue);
         this.messages.push(newValue);
     }
 
+    getAppels() {
+        return this.appels;
+    }
+
+    setAppels(newValue) {
+        this.appels.push(newValue);
+    }
+
+    getHistorique() {
+        return this.historique;
+    }
+
+    setHistorique(newValue) {
+        this.historique.push(newValue);
+        localStorage.setItem('historique', this.historique);
+    }
     //Utils Random Max Min
     getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -125,10 +163,10 @@ class Game {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    ObjectLength( object ) {
+    ObjectLength(object) {
         var length = 0;
-        for( var key in object ) {
-            if( object.hasOwnProperty(key) ) {
+        for (var key in object) {
+            if (object.hasOwnProperty(key)) {
                 ++length;
             }
         }
@@ -166,9 +204,9 @@ class Game {
         await this.sleep(5000);
         this.setMessages({
             id: 6,
-            from: "Diane Carrière ",
-            messages: [{from: "Diane Carrière", message: "Arnaud, c’est la galère, Aubin  a perdu le mot de passe pour se connecter au compte admin du projet, on peux plus bosser la. Est-ce que tu peux voir avec lui"}],
-            profilUrl: "http://localhost:3000/assets/contact/icon-bea.png",
+            from: "Diane Carrière",
+            messages: [{ from: "Diane Carrière", message: "Arnaud, c’est la galère, Aubin  a perdu le mot de passe pour se connecter au compte admin du projet, on peux plus bosser la. Est-ce que tu peux voir avec lui" }],
+            profilUrl: "http://localhost:3000/assets/contact/diane.webp",
         });
 
         this.setNotification({
@@ -177,6 +215,34 @@ class Game {
             content: "Arnaud, c’est la galère, Aubin  a perdu le mot de passe pour se connecter au compte admin...",
             icon: "/assets/Icon_notif/messages.png",
         });
+    }
+
+    async messageRaymond() {
+        await this.sleep(40000);
+        this.setNotification({
+            id: 0,
+            title: "Raymond Brousseau",
+            content: "Par contre il est taché de café donc illisible, mais Eric est le seul à boire du café donc voit avec lui",
+            icon: "/assets/appIcons/icon-message.png",
+        })
+
+        this.setMessages({
+            id: 6,
+            from: "Raymond Brousseau",
+            messages: [{ from: "Raymond Brousseau", message: "Par contre il est taché de café donc illisible, mais Eric est le seul à boire du café donc voit avec lui" }],
+            profilUrl: "http://localhost:3000/assets/contact/raymond.png",
+        });
+    }
+
+    async lunchFinalAppel() {
+        await this.sleep(5000);
+        this.setMessagerie({
+            id: 0,
+            from: "Client",
+            url: "/assets/vocaux/Clap_de_fin.mp3",
+            date: "18/10/2022",
+            heure: "16:32",
+        },);
     }
 
 }

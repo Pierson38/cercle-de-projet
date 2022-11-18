@@ -17,6 +17,8 @@ import Game from './Game/game';
 import Popup from './components/Popup/Popup';
 import Appel from './pages/Telephone/Appel';
 import ProjetCode from './pages/Projet/ProjetCode';
+import Historique from './components/Telephone/Hitorique';
+import ProjetValideAppel from './pages/Projet/ProjetValideAppel';
 
 function App() {
   return (
@@ -30,6 +32,9 @@ function App() {
         <Route path="popup" element={<Popup />} />
         <Route path="appel" element={<Appel />} />
         <Route path="projetCode" element={<ProjetCode />} />
+        <Route path="ProjetValideAppel" element={<ProjetValideAppel />} />
+        <Route path="historique" element={<Historique />} />
+        <Route path="appel/:id/" element={<Appel />} />
         <Route
           path="notes/:id/"
           element={<Note />}

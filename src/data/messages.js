@@ -35,7 +35,7 @@ var messages = [
     {
         id: 5,
         from: "Johnny",
-        messages: [{from: "moi", message: "Hello, comment va ? "}, {from: "Johnny", message: "hello, super et toi?"}, {from: "moi", message: "Super , je voulais savoir, tu viens toujours à la soirée du 18?"}, {from: "Johnny", message: "Oui, évidemment, en plus ça promet d'être génial ! On sera combien?"}, {from: "moi", message: " "}, {from: "Johnny", message: "hello, super et toi?"},],
+        messages: [{from: "moi", message: "Hello, comment va ? "}, {from: "Johnny", message: "hello, super et toi?"}, {from: "moi", message: "Super , je voulais savoir, tu viens toujours à la soirée du 18?"}, {from: "Johnny", message: "Oui, évidemment, en plus ça promet d'être génial ! On sera combien?"}, {from: "moi", message: "4"}, {from: "Johnny", message: "Trop cool !"},],
         profilUrl: "http://localhost:3000/assets/contact/johnny.png",
     },
 ];

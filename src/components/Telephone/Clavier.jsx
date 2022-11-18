@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Clavier.css";
 import { useState } from "react";
+import { useNavigate } from "react-router";
+import game from "../../Game/game";
 
 function Clavier() {
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [appelTo, setAppelTo] = useState("");
 
   const addToPhoneNumber = (value) => {
     var temp = phoneNumber + value;
@@ -15,8 +18,56 @@ function Clavier() {
     setPhoneNumber(temp);
   };
   const call = () => {
-    alert("Vous appeler");
+    switch (phoneNumber) {
+      case "0639280418":
+        setAppelTo("Aubin");
+        break;
+
+      case "0629041805":
+        setAppelTo("Christian");
+        break;
+
+      case "0639042840":
+        setAppelTo("Raymond");
+        break;
+
+      case "0609282910":
+        setAppelTo("Eric");
+        break;
+
+      default:
+        console.log("appel");
+        break;
+    }
   };
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    switch (appelTo) {
+      case "Aubin":
+        navigate("/appel/0");
+        game.setHistorique({ numero: phoneNumber, id: 0 });
+        break;
+      case "Christian":
+        navigate("/appel/1");
+        game.setHistorique({ numero: phoneNumber, id: 1 });
+        break;
+
+      case "Eric":
+        navigate("/appel/3");
+        game.setHistorique({ numero: phoneNumber, id: 1 });
+        break;
+
+      case "Raymond":
+        navigate("/appel/2");
+        game.setHistorique({ numero: phoneNumber, id: 1 });
+        game.messageRaymond();
+        break;
+
+      default:
+        break;
+    }
+  });
 
   return (
     <div className="mt-4 clavier p-2 flex flex-col justify-center">
@@ -125,14 +176,24 @@ function Clavier() {
             onClick={() => call()}
             className="rounded-full bg-slate-400 text-center text-3xl clavier_number h-14 w-14 my-2 mx-auto block callButon"
           >
-            <img className="block m-auto w-7" src="/assets/phone.png" alt="" /> 
+            <img className="block m-auto w-7" src="/assets/phone.png" alt="" />
           </button>
         </div>
         <div>
           {phoneNumber === "" ? (
             <div></div>
           ) : (
-            <button className="rounded-full text-center text-3xl h-14 w-14 my-2 mx-auto block" onClick={() => supprToPhone()}> <img className="block m-auto" src="/assets/effacer.png" alt="" /> </button>
+            <button
+              className="rounded-full text-center text-3xl h-14 w-14 my-2 mx-auto block"
+              onClick={() => supprToPhone()}
+            >
+              {" "}
+              <img
+                className="block m-auto"
+                src="/assets/effacer.png"
+                alt=""
+              />{" "}
+            </button>
           )}
         </div>
       </div>
