@@ -19,6 +19,12 @@ function ProjetCode() {
 
   useEffect(() => {
     waitForElement();
+    if (game.getEnigmeLogigram()) {
+        setMdp1_fini(true);
+        setMdp2_fini(true);
+        setMdp3_fini(true);
+        
+      }
   }, []);
 
   function waitForElement() {
@@ -167,7 +173,7 @@ function ProjetCode() {
             )}
           </form>
         </div>
-        <div className="flex justify-around mb-8">
+        <div className="flex justify-around  py-10">
           <Link to={"/projet"}>
             <div className="text-sm z-10">
               <img className="m-auto w-8" src="/assets/clock.png" alt="" />

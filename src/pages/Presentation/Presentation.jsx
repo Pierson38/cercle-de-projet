@@ -18,8 +18,7 @@ function Presentation() {
           Bienvenue sur le serious game de chef de projet{" "}
         </h1>
         <p className="text-grey font-medium mt-2 w-10/12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt{" "}
+          Bon jeu !
         </p>
 
         <div className="flex justify-between items-center bg-white rounded-3xl shadow mt-4 py-16 px-4">

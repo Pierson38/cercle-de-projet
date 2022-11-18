@@ -21,13 +21,7 @@ class Game {
         this.notification = {};
 
         //Messagerie
-        this.messagerie = [{
-            id: 0,
-            from: "Beatrice",
-            url: "/assets/vocaux/vocal_1.m4a",
-            date: "14/10/2022",
-            heure: "04:00",
-        },];
+        this.messagerie = [];
 
         this.notifications = notifs;
         this.messages = messages;
@@ -35,9 +29,24 @@ class Game {
         this.historique = [];
 
         this.sendNotifications();
+        this.verifyMessagerie();
+
+
     }
 
     sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    verifyMessagerie() {
+        if (this.getEnigmeIdentificationUnlock() === true) {
+            this.setMessagerie({
+                id: 0,
+                from: "Client",
+                url: "/assets/vocaux/Enigme_1.mp3",
+                date: "14/10/2022",
+                heure: "15:00",
+            },);
+        }
+    }
 
     getLockScreenUnlock() {
         return this.lockScreenUnlock;
@@ -112,7 +121,6 @@ class Game {
     }
 
     setMessagerie(newValue) {
-        newValue.id = Math.floor(Math.random() * 100);
         this.messagerie.push(newValue);
         this.setNotification({
             id: 0,
@@ -136,7 +144,6 @@ class Game {
     }
 
     setMessages(newValue) {
-        console.log(newValue);
         this.messages.push(newValue);
     }
 
@@ -176,11 +183,9 @@ class Game {
 
     //Gerer les notifications
     async sendNotifications() {
-        console.log("Notif envoyé");
         const notifs = this.getNotifications();
+        await this.sleep(1700000);
         this.setNotification(notifs[this.getRandomInt(0, this.ObjectLength(notifs))])
-        console.log(this.notification);
-        await this.sleep(2400000);
         this.sendNotifications();
     }
 
@@ -206,7 +211,7 @@ class Game {
             id: 6,
             from: "Diane Carrière",
             messages: [{ from: "Diane Carrière", message: "Arnaud, c’est la galère, Aubin  a perdu le mot de passe pour se connecter au compte admin du projet, on peux plus bosser la. Est-ce que tu peux voir avec lui" }],
-            profilUrl: "http://localhost:3000/assets/contact/diane.webp",
+            profilUrl: "/assets/contact/diane.webp",
         });
 
         this.setNotification({
@@ -227,17 +232,17 @@ class Game {
         })
 
         this.setMessages({
-            id: 6,
+            id: 7,
             from: "Raymond Brousseau",
             messages: [{ from: "Raymond Brousseau", message: "Par contre il est taché de café donc illisible, mais Eric est le seul à boire du café donc voit avec lui" }],
-            profilUrl: "http://localhost:3000/assets/contact/raymond.png",
+            profilUrl: "/assets/contact/raymond.png",
         });
     }
 
     async lunchFinalAppel() {
         await this.sleep(5000);
         this.setMessagerie({
-            id: 0,
+            id: 1,
             from: "Client",
             url: "/assets/vocaux/Clap_de_fin.mp3",
             date: "18/10/2022",

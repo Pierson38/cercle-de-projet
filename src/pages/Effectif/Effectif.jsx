@@ -380,7 +380,7 @@ function Effectif() {
           {lot1_fini && lot2_fini && lot3_fini && (
             <div className="flex justify-center mt-8">
               <p className="text-center">
-                Les taches de chaques personnes ont bien été attribués !
+                Les taches de chaques personnes ont bien été attribués ! A leur tour de jouer, vous pouvez respirer deux minutes.
               </p>
             </div>
           )}

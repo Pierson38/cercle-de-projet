@@ -14,7 +14,13 @@ function ProjetValideAppel() {
 
   useEffect(() => {
     waitForElement();
+    if (game.getEnigmeAppel()) {
+      setMdp_fini(true);
+      setMdp("PHARAONMDR");
+    }
+
   }, []);
+
 
   function waitForElement() {
     setNotification(game.getNotification());
@@ -76,12 +82,12 @@ function ProjetValideAppel() {
 
             {mdp_fini && (
               <div className="flex justify-center mt-8">
-                <p className="text-center">Le conflit a été géré ! Il faut maintenant verifié la conformité.</p>
+                <p className="text-center">Le conflit a été géré ! Il faut maintenant vérifier la conformité.</p>
               </div>
             )}
           </form>
         </div>
-        <div className="flex justify-around mb-8">
+        <div className="flex justify-around  py-10">
           <Link to={"/projet"}>
             <div className="text-sm z-10">
               <img className="m-auto w-8" src="/assets/clock.png" alt="" />

@@ -46,7 +46,7 @@ function TelephoneApp() {
         <ToShow />
       </div>
 
-      <div className="flex justify-around mb-8">
+      <div className="flex justify-around  py-10">
         <div
           className="text-sm z-10"
           onClick={() => setPhonePage("Historique")}

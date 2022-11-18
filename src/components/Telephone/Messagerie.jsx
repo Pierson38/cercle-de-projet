@@ -2,25 +2,39 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./Messagerie.css";
 import game from "../../Game/game";
-
+import { useNavigate } from "react-router";
 
 function Messagerie() {
-  const[messagerie, setMessagerie] = useState([]);
+  const [messagerie, setMessagerie] = useState([]);
+  const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
     waitForElement();
   }, []);
 
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (redirect) {
+      navigate("/lastpage");
+    }
+  });
+
+  async function redirectFinal() {
+    await sleep(20000);
+    setRedirect(true);
+  }
+
   function waitForElement() {
     setMessagerie(game.getMessagerie());
+    console.log(messagerie);
     setTimeout(waitForElement, 3000);
   }
 
-
   // un hook custom pour gérer l'audio
-  const useAudio = (url) => {
-    
-    const [audio] = useState(new Audio(url));
+  const useAudio = (message) => {
+    const [audio] = useState(new Audio(message.url));
     const [playing, setPlaying] = useState(false);
 
     const togglePlayback = () => setPlaying(!playing);
@@ -40,11 +54,15 @@ function Messagerie() {
       };
     }, []);
 
+    if (message.url === "/assets/vocaux/Clap_de_fin.mp3") {
+      redirectFinal();
+    }
+
     return [playing, togglePlayback];
   };
 
   const AudioPlayer = ({ message }) => {
-    const [playing, togglePlayback] = useAudio(message.url);
+    const [playing, togglePlayback] = useAudio(message);
 
     return (
       <div>
@@ -59,9 +77,7 @@ function Messagerie() {
           </div>
         </div>
         <div>
-          <button onClick={togglePlayback}>
-            {playing ? "⏸️" : "⏯️"}
-          </button>
+          <button onClick={togglePlayback}>{playing ? "⏸️" : "⏯️"}</button>
         </div>
       </div>
     );
