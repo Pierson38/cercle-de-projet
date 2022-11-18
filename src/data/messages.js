@@ -38,6 +38,31 @@ var messages = [
         messages: [{from: "moi", message: "Hello, comment va ? "}, {from: "Johnny", message: "hello, super et toi?"}, {from: "moi", message: "Super , je voulais savoir, tu viens toujours à la soirée du 18?"}, {from: "Johnny", message: "Oui, évidemment, en plus ça promet d'être génial ! On sera combien?"}, {from: "moi", message: "4"}, {from: "Johnny", message: "Trop cool !"},],
         profilUrl: "http://localhost:3000/assets/contact/johnny.png",
     },
+    {
+        id: 6,
+        from: "DHL",
+        messages: [ {from: "DHL", message: "DHL express 7563567534 de DORCEL.co. Livraison prévue AUJOURD'HUI."}, {from: "moi", message: "Ca va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/dhl.png",
+    },
+    {
+        id: 7,
+        from: "DHL",
+        messages: [ {from: "DHL", message: "DHL express 75635928334 de Amazon Livraison prévue le 21/11."}, {from: "moi", message: "Ca va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/dhl.png",
+    },
+    {
+        id: 8,
+        from: "DHL",
+        messages: [ {from: "DHL", message: "DHL express 7563567534 de DORCEL.co. Livraison prévue AUJOURD'HUI."}, {from: "moi", message: "Ca va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/dhl.png",
+    },
+    {
+        id: 9,
+        from: "DHL",
+        messages: [ {from: "DHL", message: "DHL express 7563567534 de LUXOR.co. Livraison prévue DEMAIN."}, {from: "moi", message: "Ca va ?"}],
+        profilUrl: "http://localhost:3000/assets/contact/dhl.png",
+    },
+
 ];
 
 export default messages;
