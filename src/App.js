@@ -19,6 +19,7 @@ import Appel from './pages/Telephone/Appel';
 import ProjetCode from './pages/Projet/ProjetCode';
 import Historique from './components/Telephone/Hitorique';
 import ProjetValideAppel from './pages/Projet/ProjetValideAppel';
+import LastPage from './pages/LastPage/LastPage';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="ProjetValideAppel" element={<ProjetValideAppel />} />
         <Route path="historique" element={<Historique />} />
         <Route path="appel/:id/" element={<Appel />} />
+        <Route path="lastpage" element={<LastPage />} />
         <Route
           path="notes/:id/"
           element={<Note />}
