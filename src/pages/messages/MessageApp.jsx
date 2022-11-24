@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../../fonts/SF_Pro/SF-Pro.ttf";
 
 import game from '../../Game/game';
 import { Link } from "react-router-dom";

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./ProjetApp.css";
-import "../../fonts/SF_Pro/SF-Pro.ttf";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import game from "../../Game/game";

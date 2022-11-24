@@ -2,7 +2,6 @@ import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import applications from "../../data/applications";
 import "./HomePage.css";
-import "../../fonts/SF_Pro/SF-Pro.ttf";
 import Notification from "../../components/Notification/Notification";
 import game from "../../Game/game";
 

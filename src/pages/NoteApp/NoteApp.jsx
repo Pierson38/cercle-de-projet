@@ -1,7 +1,6 @@
 import "./NoteApp.css";
 import React, { useEffect, useState } from "react";
 
-import "../../fonts/SF_Pro/SF-Pro.ttf";
 import NoteItem from "../../components/Note/NoteItem";
 import game from "../../Game/game";
 import notes from "../../data/note";

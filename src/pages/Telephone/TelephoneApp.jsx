@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 
-import "../../fonts/SF_Pro/SF-Pro.ttf";
 import { useState } from "react";
 import "./TelephoneApp.css";
 import { Link } from "react-router-dom";
